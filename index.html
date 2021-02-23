@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Route And Pitch Animation</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    .map-marker {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #d01212;
+        box-shadow: 2px 2px 0.4em #ee3838;
+    }
+
+    .animation-control {
+        padding:6px 6px;
+        background-color: rgba(128, 128, 128, 0);
+        width: 20vw;
+    }
+
+    .btn {
+        border:0px;
+        color: #d01212;
+        background-color: white;
+        padding:0.2em 8px;
+        box-shadow: 2px 2px 0.4em #424242;
+    }
+
+    .btn:focus {
+        outline:none;
+        background-color:#d01212;
+        color:white;
+    }
+
+    .distance-travelled {
+        font-size: 1.6em;
+        margin-top: 0.3em;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-style: oblique;
+        color:#fff;
+        text-shadow:2px 2px 0.4em #7b7b7b;
+        padding:0.1em 0.2em;
+        background-color: #30303078;
+    }
+</style>
+</head>
+<body>
+<div id="map"></div>
+    <script src='https://unpkg.com/@turf/turf/turf.min.js'></script>
+    <script src="main.js"></script>
+</body>
+</html>
